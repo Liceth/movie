@@ -8,9 +8,10 @@ export default class Home extends Component {
     render() {
         const goToPageTwo = () => Actions.Detail();
         return (
-            <View style={{backgroundColor: '#BBBAB9'}}>
-                <Text> Hello Home</Text>
-                <Text> Hello Lilo</Text>
+            <View>
+                <View>
+                    <Text> Hello Home</Text>
+                </View>
             </View>
         );
     

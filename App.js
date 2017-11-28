@@ -5,14 +5,15 @@ import {
   Text,
   View
 } from 'react-native';
-import { Router, Scene } from 'react-native-router-flux'
+import { Router, Scene } from 'react-native-router-flux';
+import navigationBar from 'react-native-navbar';
 import Home from './components/Home';
 import Detail from './components/Detail';
 
 export default class App extends Component<{}> {
   render() {
     return (
-      <Router>
+      <Router navigationBarStyle={{backgroundColor:'#ffffff'}}>
       <Scene key="root">
         <Scene key="Home" component={Home} initial={true}/>
         <Scene key="Detail" component={Detail} />

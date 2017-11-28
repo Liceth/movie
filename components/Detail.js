@@ -7,7 +7,7 @@ export default class Detail extends Component {
 
     render() {
         return (
-            <View style={{backgroundColor: '#ffffff'}}>
+            <View>
                 <Text> Hello Detail</Text>
             </View>
         );
