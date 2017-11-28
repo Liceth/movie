@@ -9,8 +9,8 @@ export default class Home extends Component {
         const goToPageTwo = () => Actions.Detail();
         return (
             <View>
-                <View>
-                    <Text> Hello Home</Text>
+                <View style={{backgroundColor:'#E6D2E0'}}>
+                    <Text onPress={goToPageTwo}>Details</Text>
                 </View>
             </View>
         );

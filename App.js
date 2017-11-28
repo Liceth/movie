@@ -6,14 +6,13 @@ import {
   View
 } from 'react-native';
 import { Router, Scene } from 'react-native-router-flux';
-import navigationBar from 'react-native-navbar';
 import Home from './components/Home';
 import Detail from './components/Detail';
 
 export default class App extends Component<{}> {
   render() {
     return (
-      <Router navigationBarStyle={{backgroundColor:'#ffffff'}}>
+      <Router>
       <Scene key="root">
         <Scene key="Home" component={Home} initial={true}/>
         <Scene key="Detail" component={Detail} />
@@ -29,15 +28,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
   },
 });
